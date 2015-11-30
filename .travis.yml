@@ -8,9 +8,6 @@ env:
     - COVERAGE_EXCLUDE=t:examples
   matrix:
     - LISP=sbcl-bin COVERALLS=true
-
-services:
-  - rabbitmq
     
 #before_install:
 #  - sudo apt-get install -y ...
