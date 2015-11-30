@@ -19,8 +19,8 @@ install:
   - curl -L https://raw.githubusercontent.com/snmsts/roswell/$ROSWELL_BRANCH/scripts/install-for-ci.sh | sh
   - ros install prove
 
-#before_script:
-#  - ./install-travis-deps.sh
+before_script:
+  - ./install-travis-deps.sh
 
 script:
   - run-prove cl-mail.test.asd
