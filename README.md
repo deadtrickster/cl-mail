@@ -1,2 +1,2 @@
-# cl-mail
+# CL-MAIL
 Emails and Common Lisp
