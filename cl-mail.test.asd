@@ -21,7 +21,8 @@
                 :serial t
                 :components
                 ((:file "package")
-                 (:test-file "dummy"))))
+                 (:test-file "dummy")
+                 (:test-file "mail/fields/address"))))
   :defsystem-depends-on (:prove-asdf)
   :perform (test-op :after (op c)
                     (funcall (intern #.(string :run-test-system) :prove-asdf) c)))
