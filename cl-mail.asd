@@ -12,6 +12,7 @@
   :author "Ilya Khaprov <ilya.khaprov@publitechs.com>"
   :licence "MIT"
   :depends-on ("alexandria"
+               "split-sequence"
                "string-case"
                "trivial-backtrace"
                "quri"
@@ -19,4 +20,6 @@
   :components ((:module "src"
                 :serial t
                 :components
-                ((:file "package")))))
+                ((:file "package")
+                 (:file "mail/parsers/mail-address")
+                 (:file "mail/address")))))
